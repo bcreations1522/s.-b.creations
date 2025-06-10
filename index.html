@@ -5,68 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>B. Créations - Identité Visuelle & Communication</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    /* Reset */
+    * {
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
       background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
+      padding: 2rem;
     }
+
     header {
-      background: #2c3e50;
-      color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding-bottom: 2rem;
     }
+
+    .logo {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
     nav {
-      background: #34495e;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
     }
+
     nav a {
-      color: white;
-      padding: 1rem;
       text-decoration: none;
-      transition: background 0.3s;
+      color: white;
+      background-color: #34495e;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
+
     nav a:hover {
-      background: #2c3e50;
+      background-color: #2c3e50;
     }
+
     section {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 900px;
+      margin: 0 auto 3rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
-    h1, h2 {
+
+    h2 {
       color: #2c3e50;
+      margin-bottom: 1rem;
     }
-    .services ul {
-      list-style: square;
+
+    ul {
+      list-style-type: square;
       padding-left: 1.5rem;
     }
+
     footer {
-      background: #2c3e50;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
+      color: #777;
+      font-size: 0.9rem;
     }
+
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
 
+  <!-- En-tête -->
   <header>
+    <img src="assets/logo.png" alt="Logo B. Créations" class="logo">
     <h1>B. Créations</h1>
-    <p>Création d'identité visuelle & accompagnement en communication</p>
+    <p class="subtitle">Création d'identité visuelle & accompagnement en communication</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#services">Services</a>
@@ -74,6 +113,7 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Section Accueil -->
   <section id="accueil">
     <h2>Qui suis-je ?</h2>
     <p>Spécialisée dans la création d’identité visuelle, je t’aide à construire ou renforcer ton image de marque grâce à un graphisme clair, unique et impactant.</p>
@@ -81,7 +121,8 @@
     <p><strong>Artisan, commerçant, freelance, ou chef d’entreprise ? Ensemble, donnons vie à ton image de marque.</strong></p>
   </section>
 
-  <section class="services" id="services">
+  <!-- Services -->
+  <section id="services">
     <h2>Mes Services</h2>
     <ul>
       <li><strong>Création de logo sur mesure</strong> : Un logo qui te ressemble et qui parle à tes clients.</li>
@@ -96,6 +137,7 @@
     </ul>
   </section>
 
+  <!-- Pack complet -->
   <section id="pack">
     <h2>Pack "Identité Visuelle + Communication"</h2>
     <p>Tu veux une offre complète et clé en main ? Je propose un pack personnalisé qui inclut :</p>
@@ -110,6 +152,7 @@
     <p>Contacte-moi pour recevoir ton devis gratuit !</p>
   </section>
 
+  <!-- Contact -->
   <section id="contact">
     <h2>Me contacter</h2>
     <p>Tu as une idée en tête ? Une demande précise ? N’hésite pas à me contacter :</p>
@@ -124,6 +167,7 @@
     </p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 B. Créations — Tous droits réservés</p>
   </footer>
