@@ -83,13 +83,6 @@
       padding-left: 1.5rem;
     }
 
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
     /* Style des éléments du formulaire */
     input, textarea {
       border: 1px solid #ccc;
@@ -137,6 +130,34 @@
       }
     }
 
+    /* Image exemple */
+    .portfolio-img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f1f1f1;
+      font-size: 1rem;
+      color: #555;
+      margin-top: 4rem;
+      border-top: 1px solid #ddd;
+    }
+
+    footer a {
+      color: #34495e;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
@@ -168,6 +189,7 @@
     <p>Spécialisée dans la création d’identité visuelle, je t’aide à construire ou renforcer ton image de marque grâce à un graphisme clair, unique et impactant.</p>
     <p>Logo, charte graphique, supports de communication… Je mets mon expertise à ton service pour que ton entreprise soit belle, cohérente et visible.</p>
     <p><strong>Artisan, commerçant, freelance, ou chef d’entreprise ? Ensemble, donnons vie à ton image de marque.</strong></p>
+    <img src="assets/portfolio-example.jpg" alt="Exemple de logo réalisé" class="portfolio-img">
   </section>
 
   <!-- Services -->
@@ -207,7 +229,7 @@
     <p>Tu as une idée en tête ? Une demande précise ? Remplis le formulaire ci-dessous ou écris-moi à l’adresse e-mail.</p>
 
     <!-- Formulaire -->
-    <form action="https://formspree.io/f/mzzgeoap"  method="POST">
+    <form action="https://formspree.io/f/ton-id-formspree"  method="POST">
       <label for="name">Nom :</label><br>
       <input type="text" id="name" name="name" required><br>
 
@@ -234,6 +256,13 @@
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 B. Créations — Tous droits réservés</p>
+    <p>
+      <a href="#accueil">Accueil</a> |
+      <a href="#services">Services</a> |
+      <a href="#pack">Pack Complet</a> |
+      <a href="#contact">Contact</a>
+    </p>
+    <p style="font-size: 0.9rem; color: #777;">Site créé avec passion par B. Créations</p>
   </footer>
 
 </body>
